@@ -7,26 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header class="header">
         <img src="afn1.png" alt="Logo AFN 1" class="header-logo-left">
         <h1 class="header-title">ASSOCIAÇÃO FUTURO DA NAÇÃO</h1>
         <img src="afn.png" alt="Logo AFN Digital" class="header-logo-right">
     </header>
-
     <nav class="navigation">
-        <a href="index.html">Histórico</a>
+        <a href="index.html">Apresentação</a>
+        <a href="historico.html">Histórico</a>
         <a href="projeto.html">Projeto Design</a>
         <a href="capoeira.html">Projeto Capoeira</a>
         <a href="fotos.html">Fotos</a>
     </nav>
-    
     <main class="content-box">
         <h2>Galeria de Fotos</h2>
-        <p>
-            Confira alguns momentos das nossas atividades, cursos e eventos realizados na comunidade. Clique em uma imagem para ver em tamanho maior.
-        </p>
-
+        <p>Confira alguns momentos das nossas atividades, cursos e eventos realizados na comunidade. Clique em uma imagem para ver em tamanho maior.</p>
         <div class="gallery-grid">
             <div class="gallery-item"><img src="af1.jpeg" alt="Foto 1"><p>Foto 1</p></div>
             <div class="gallery-item"><img src="af2.jpeg" alt="Foto 2"><p>Foto 2</p></div>
@@ -42,43 +37,12 @@
             <div class="gallery-item"><img src="af12.jpeg" alt="Foto 12"><p>Foto 12</p></div>
         </div>
     </main>
-
     <div id="myModal" class="modal">
         <span class="modal-close">&times;</span>
         <img class="modal-content" id="img01">
     </div>
-
     <script>
-        // Pega a janela modal
-        var modal = document.getElementById("myModal");
-        var modalImg = document.getElementById("img01");
-
-        // Pega todas as imagens da galeria
-        var images = document.querySelectorAll(".gallery-item img");
-        
-        // Adiciona o evento de clique para cada imagem
-        images.forEach(function(img) {
-            img.onclick = function() {
-                modal.style.display = "block";
-                modalImg.src = this.src;
-            }
-        });
-
-        // Pega o elemento <span> que fecha o modal
-        var span = document.getElementsByClassName("modal-close")[0];
-
-        // Quando o usuário clicar no (x), fecha o modal
-        span.onclick = function() { 
-            modal.style.display = "none";
-        }
-
-        // Também fecha o modal se o usuário clicar fora da imagem
-        modal.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
+        var modal=document.getElementById("myModal"),modalImg=document.getElementById("img01"),images=document.querySelectorAll(".gallery-item img");images.forEach(function(c){c.onclick=function(){modal.style.display="block",modalImg.src=this.src}});var span=document.getElementsByClassName("modal-close")[0];span.onclick=function(){modal.style.display="none"},modal.onclick=function(c){c.target==modal&&(modal.style.display="none")};
     </script>
-
 </body>
 </html>
