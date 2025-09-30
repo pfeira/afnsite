@@ -31,6 +31,28 @@ body {
     width: auto; /* Largura automática para manter a proporção */
 }
 
+/* ---- Navegação ---- */
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.navigation a {
+    color: #000080;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+
 /* ---- Conteúdo Principal ---- */
 .content-box {
     background-color: rgba(0, 255, 255, 0.05); /* Fundo cyan com 5% de opacidade */
@@ -45,11 +67,6 @@ body {
     font-weight: bold;
     border-bottom: 2px solid #000080; /* Linha abaixo do título para destacar */
     padding-bottom: 10px;
-    margin-top: 30px; /* Espaço acima dos títulos de seção */
-}
-
-.content-box h2:first-child {
-    margin-top: 0; /* Remove o espaço extra do primeiro título */
 }
 
 .content-box p, .content-box li {
