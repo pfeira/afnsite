@@ -1,0 +1,63 @@
+/* Importa a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* ---- Estilos Gerais ---- */
+body {
+    font-family: 'Roboto', sans-serif; /* Define a fonte principal para todo o site */
+    background-color: rgba(0, 255, 255, 0.2); /* Fundo da página em cyan com 20% de opacidade */
+    margin: 0;
+    padding: 20px;
+}
+
+/* ---- Cabeçalho ---- */
+.header {
+    background-color: white; /* Fundo branco para a caixa do cabeçalho */
+    display: flex; /* Organiza os itens do cabeçalho de forma flexível */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Espaça os itens (título e logo) */
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para destacar */
+}
+
+.header-title {
+    color: #000080; /* Cor azul marinho escuro para o título */
+    text-align: center; /* Centraliza o título */
+    flex-grow: 1; /* Permite que o título ocupe o espaço disponível */
+}
+
+.header-logo {
+    height: 80px; /* Altura da imagem/logo. Ajuste conforme necessário */
+    width: auto; /* Largura automática para manter a proporção */
+}
+
+/* ---- Conteúdo Principal ---- */
+.content-box {
+    background-color: rgba(0, 255, 255, 0.05); /* Fundo cyan com 5% de opacidade */
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+.content-box h2, .content-box h3 {
+    color: #000080; /* Cor azul marinho escuro para os títulos */
+    font-weight: bold;
+    border-bottom: 2px solid #000080; /* Linha abaixo do título para destacar */
+    padding-bottom: 10px;
+    margin-top: 30px; /* Espaço acima dos títulos de seção */
+}
+
+.content-box h2:first-child {
+    margin-top: 0; /* Remove o espaço extra do primeiro título */
+}
+
+.content-box p, .content-box li {
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas para melhor leitura */
+    font-size: 16px;
+}
+
+.content-box ul {
+    list-style-type: square; /* Estilo dos itens da lista */
+    padding-left: 20px;
+}
